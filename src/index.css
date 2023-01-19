@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("./fonts/TrebuchetMS.woff2") format("woff2"),
+    url("./fonts/TrebuchetMS.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("./fonts/TrebuchetMSBold.woff2") format("woff2"),
+    url("./fonts/TrebuchetMSBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Exo2.0";
+  src: url("./fonts/Exo2.0-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  min-width: 320px;
+  background-image: url("../public/image/Pattern.png");
+  background-size: 100% auto;
+  font-family: "TrebuchetMS", "Tahoma", sans-serif;;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  body{
+    background-image: url("../public//image/Pattern@2x.png");
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
 }
